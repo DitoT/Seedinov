@@ -1,0 +1,59 @@
+.logo-carousel {
+  background-color: #0c0c0c;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-carousel:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo img {
+  height: 50px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.line {
+  position: relative;
+  margin: 30px auto 0;
+  width: 80%;
+  height: 2px;
+  background-color: #00a676;
+}
+
+.dot {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #00a676;
+  border-radius: 50%;
+}

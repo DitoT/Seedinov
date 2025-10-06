@@ -1,0 +1,101 @@
+.case-studies {
+  background-color: #0c0c0c;
+  color: #f0f0f0;
+  padding: 60px 40px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.case-studies h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.case-studies h1 span {
+  color: #00a676;
+}
+
+.case-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.case-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.case-card {
+  flex: 0 0 80%;
+  background-color: #121212;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  scroll-snap-align: start;
+  padding: 40px;
+  min-height: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.case-text {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.case-text h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.case-text h3 {
+  color: #00a676;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.case-text p {
+  color: #c7c7c7;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.case-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-img img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .case-card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .case-img {
+    margin-top: 20px;
+  }
+
+  .case-card {
+    flex: 0 0 90%;
+  }
+}

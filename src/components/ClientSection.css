@@ -1,0 +1,101 @@
+.client-section {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 80px 100px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.client-subtitle {
+  color: #00a37e;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.client-title {
+  font-size: 28px;
+  font-weight: 700;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  line-height: 1.5;
+}
+
+.client-title span {
+  color: #00a37e;
+}
+
+.client-video-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.client-video-card {
+  border: 2px solid #00a37e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 380px;
+  background-color: #111;
+  transition: transform 0.3s ease;
+}
+
+.client-video-card:hover {
+  transform: translateY(-5px);
+}
+
+.client-video-wrapper {
+  position: relative;
+}
+
+.client-thumbnail {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(20, 20, 20, 0.7);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 28px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 163, 126, 0.8);
+}
+
+@media (max-width: 900px) {
+  .client-section {
+    padding: 60px 30px;
+  }
+
+  .client-title {
+    font-size: 22px;
+  }
+
+  .client-video-card {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .client-video-card {
+    width: 100%;
+  }
+}
