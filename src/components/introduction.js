@@ -11,7 +11,7 @@ function Introduction() {
     <div className="Introduction">
       <div className="top_content">
         <h1>SeenInov.</h1>
-        <a href="#">blogs</a>
+        <a onClick={() => navigate("/blogs")} className="nav-link">blogs</a>
         <button onClick={() => setShowModal(true)}>Let's Talk</button>
       </div>
 

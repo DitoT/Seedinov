@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0b0b0b;
+  color: white;
+}
+
+.blogs-container {
+  min-height: 100vh;
+  padding: 0 4rem;
+  background: linear-gradient(to bottom, #0b0b0b, #0f2418);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00a87e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.talk-btn {
+  background: transparent;
+  border: 2px solid #00a87e;
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.talk-btn:hover {
+  background: #00a87e;
+  color: black;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+}
+
+.hero-text h1 span {
+  color: #00a87e;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.ai-button {
+  margin-top: 2rem;
+  background: #131313;
+  border: none;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ai-button span {
+  background: #00a87e;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+}
+
+.hero-card {
+  background: #141414;
+  border-radius: 1rem;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 168, 126, 0.2);
+}
+
+.card-image {
+  position: relative;
+  background: radial-gradient(circle, #0c0c0c, #101010);
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sphere {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, red, green, blue);
+}
+
+.wave-icon {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.hero-card h2 {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.explore-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.explore-section h1 {
+  font-size: 3rem;
+}
+
+.explore-section h1 span {
+  color: #00a87e;
+}
+
+.explore-section p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.blog-card {
+  background: #141414;
+  border-radius: 1rem;
+  width: 420px;
+  margin: 3rem auto;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 168, 126, 0.2);
+}
+
+.blog-card .card-image {
+  height: 220px;
+}
+
+.blog-card h2 {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-card {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .explore-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .blog-card {
+    width: 100%;
+  }
+}
