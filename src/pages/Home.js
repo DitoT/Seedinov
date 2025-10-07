@@ -33,6 +33,9 @@ import "../components/ClientDashboard.css";
 import Testimonials from "../components/Testimonials";
 import "../components/Testimonials.css";
 
+import Footer from "../components/Footer";
+import "../components/Footer.css";
+
 function Home() {
   return (
     <div className="Home">
@@ -47,6 +50,7 @@ function Home() {
       <Solutions />
       <ClientDashboard />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

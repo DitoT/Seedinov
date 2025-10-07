@@ -1,0 +1,116 @@
+.voice-recorder {
+  background: linear-gradient(to bottom right, #0f0f0f, #1c1c1c);
+  color: #ffffff;
+  padding: 60px 30px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+.header-text {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.header-text span {
+  color: #00ff88;
+}
+
+.mic-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #222;
+  border: 2px solid #00ff88;
+  border-radius: 50px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.mic-section:hover {
+  background-color: #333;
+}
+
+.mic-icon {
+  font-size: 28px;
+}
+
+.mic-label {
+  font-size: 18px;
+}
+
+.dialog-box {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.home-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #00ff88;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #00cc66;
+}
+
+
+@media (max-width: 600px) {
+  .voice-recorder {
+    padding: 40px 20px;
+  }
+
+  .header-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .mic-section {
+    gap: 8px;
+    padding: 12px 18px;
+  }
+
+  .mic-icon {
+    font-size: 24px;
+  }
+
+  .mic-label {
+    font-size: 16px;
+  }
+
+  .dialog-box {
+    font-size: 14px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  button.home-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

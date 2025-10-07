@@ -1,50 +1,88 @@
 .testimonials-container {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-}
-
-.testimonials-container h2 {
+  background: #050505;
+  color: #fff;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.testimonials {
+.testimonials-header h4 {
+  color: #00ff9f;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.testimonials-header h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.testimonials-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: linear-gradient(145deg, #0a0a0a, #101010);
+  border: 1px solid #00ff9f30;
+  border-radius: 16px;
+  padding: 25px 30px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: #00ff9f;
+}
+
+.testimonial-profile {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-.testimonial {
-  background-color: #2a2a2a;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.testimonial-profile img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.testimonial h3 {
+.testimonial-profile h3 {
+  font-size: 16px;
   margin: 0;
 }
 
-.testimonial h4 {
-  margin: 5px 0 10px;
-  font-weight: normal;
+.testimonial-profile p {
+  font-size: 13px;
+  color: #ccc;
+  margin: 3px 0 0;
 }
 
-.testimonial p {
-  font-size: 14px;
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #eaeaea;
+  margin-top: 10px;
 }
 
-@media (min-width: 600px) {
-  .testimonials {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 60px 5%;
   }
 
-  .testimonial {
-    flex: 1 1 calc(33% - 40px);
-    max-width: calc(33% - 40px);
+  .testimonials-header h2 {
+    font-size: 28px;
+  }
+
+  .testimonial-card {
+    padding: 20px 25px;
   }
 }
